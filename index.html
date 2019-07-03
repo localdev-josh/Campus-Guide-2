@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9" style="padding: 0px">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+
+                        <iframe width="100%" height="100%" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=university%20of%20lagos&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 100vh;
+                            width: 100%;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            /* background: red; */
+                            background: none !important;
+                            height: 100vh;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3" style="overflow: hidden;">
+                <div class="row">
+                    <div class="logo">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <form class="form-inline ml-auto col-md-12">
+                        <input type="text" name="search" id="search" placeholder="Search places">
+                    </form>
+                </div>
+                <div class="row navs">
+                    <center>
+                        <div class="row" id="itemss">
+                            Rules and Regulations
+                        </div>
+                        <div class="row" id="itemss">
+                            Unilag News
+                        </div>
+                    </center>
+                </div><br><br><br>
+                <div class="row" id="navigate">
+                    <center class="tit">Navigate</span></center>
+                </center>
+                    <form class="row forms" action="">
+                        
+                            <input type="text" name="from" id="snav" placeholder="From">
+                            <input type="text" name="to" id="snav" placeholder="To">
+                        <br>
+                        <button type="submit" id="bottom">Route</button>
+                    </form>
+                </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
